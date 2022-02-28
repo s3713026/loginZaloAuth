@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const { request } = require('https')
-const port = process.env.PORT ||3000;
+
 const fs = require('fs');
 
 
@@ -19,6 +19,6 @@ app.get('/loc', (request, response) => {
   })
 
 
-app.listen(port,()=>{
-    console.log(`Running on port ${port}`)
+app.listen(process.env.PORT ||5000,()=>{
+    console.log(`Running on port 5000`)
 })
