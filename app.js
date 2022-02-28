@@ -8,7 +8,7 @@ const fs = require('fs');
 
 app.use(express.static('public'))
 
-app.get('/loc', (request, response) => {
+app.get('/', (request, response) => {
     console.log(request.params)
     var url_page = request.query;
     var string = JSON.stringify(url_page);
